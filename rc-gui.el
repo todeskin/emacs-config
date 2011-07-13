@@ -1,11 +1,11 @@
 ;; color-theme
-(add-to-list 'load-path (concat config-dir "vendor/color-theme"))
-(require 'color-theme)
-(color-theme-initialize)
+;;(add-to-list 'load-path (concat config-dir "vendor/color-theme"))
+;;(require 'color-theme)
+;;(color-theme-initialize)
 
 ;; theme like in emacs
-(load (concat config-dir "vendor/color-theme-idle-fingers.el"))
-(color-theme-idle-fingers)
+;;(load (concat config-dir "vendor/color-theme-idle-fingers.el"))
+;;(color-theme-idle-fingers)
 
 ;; some customizations for org-mode
 (setq org-todo-keyword-faces
@@ -39,11 +39,11 @@
 (global-hl-line-mode t)
 
 ;; light colors
-;;(custom-set-faces
-;; '(default ((t (:background "grey90" :foreground "black"))))
-;; '(font-lock-comment-face ((((class color) (min-colors 88) (background light))
-;;                            (:foreground "gray50"))))
-;; '(org-hide ((((background light)) (:foreground "grey90")))))
+(custom-set-faces
+ '(default ((t (:background "grey90" :foreground "black"))))
+ '(font-lock-comment-face ((((class color) (min-colors 88) (background light))
+                            (:foreground "gray50"))))
+ '(org-hide ((((background light)) (:foreground "grey90")))))
 
 ;; TextMate idleFingers
 ;; (custom-set-faces
