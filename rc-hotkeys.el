@@ -45,3 +45,6 @@
 (setq mac-command-key-is-meta t)
 (setq mac-command-modifier 'meta)
 (setq mac-option-modifier 'super)
+
+;; Clone line
+(global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
