@@ -87,3 +87,14 @@
       (setq cursor-type djcb-normal-cursor-type))))
 
 (add-hook 'post-command-hook 'djcb-set-cursor-according-to-mode)
+
+;; smooth scrolling
+(setq redisplay-dont-pause t
+  scroll-margin 2
+  scroll-step 1
+  scroll-conservatively 10000
+  scroll-preserve-screen-position 1)
+
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
