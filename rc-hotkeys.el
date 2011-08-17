@@ -48,3 +48,6 @@
 
 ;; Clone line
 (global-set-key "\C-c\C-d" "\C-a\C- \C-n\M-w\C-y")
+
+;; Use C-v to paste buffer
+(global-set-key "\C-v" "\C-y")
