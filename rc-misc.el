@@ -3,6 +3,9 @@
 (setq yas/prompt-functions '(yas/dropdown-prompt
 			     yas/ido-prompt
 			     yas/completing-prompt))
+;; load custom snippets
+(yas/load-directory
+ (concat config-dir "snippets"))
 
 ;; auto-complete
 (add-to-list 'load-path (concat config-dir "vendor/auto-complete"))
