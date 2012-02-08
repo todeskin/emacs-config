@@ -1,0 +1,1 @@
+ѕосле клонировани€ репозитори€ в ~/.emacs.d/ надо сделать: git submodule update --init --recursive !!!!!!!!!!!!!!!!!!!!
